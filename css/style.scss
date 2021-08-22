@@ -165,7 +165,10 @@
     &__main {
         background-image: url(../img/back.jpg);
         background-size: cover;
-        padding-top: 10%;
+        padding-top: 0;
+        @media (min-width: 600px) {
+            padding-top: 10%;
+        }
     }
     &__bottom {
         &-content {
@@ -335,7 +338,7 @@
 }
 
 .slider {
-    padding: 21px 41px 51px 21px;
+    padding: 21px 41px 0 21px;
     max-width: 560px;
     background-color: #ffffff;
     @media (min-width: 600px) {
@@ -380,6 +383,7 @@
     &__bottom {
         display: flex;
         align-items: center;
+        margin-left: -20px;
         &-link {
             font-size: 16px;
 
